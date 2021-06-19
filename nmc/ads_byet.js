@@ -1,0 +1,1 @@
+//document.write('<div style="text-align: center; display: block;"><iframe src="ads_byet.html" id="byethost_advert" marginwidth="0" marginheight="0" name="myadvert" frameborder="0" height="90" scrolling="no" width="728"></iframe></div>')
