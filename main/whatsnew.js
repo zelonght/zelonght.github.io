@@ -34,6 +34,10 @@ whatnew[2005*12+2]="Vietnam traditional Tet holiday, what can I do, ha ha"
 whatnew[2005*12+3]="Pls notice that in the life, there s.t that s.o donnt like to write 'cause he love you and donnt want you to waste of ur time. Ha"
 j=bnam;
 for(i=bthang;i<13;i++){
-document.write("<ul dynamicoutline initcollapsed><li><p class='hand'>Tháng " + i + "/" + j + "<ul><li>" + whatnew[j*12+i] + "</li></ul></li></ul>")
-if(j>=curyear && i>=curmonth){i=13}
-if(i==12){i=0;j++}}
+    if(whatnew[j*12+i]==undefined){
+        whatnew[j*12+i] = "Nothing new, stay tuned and check back later!";
+    }
+    document.write("<ul dynamicoutline initcollapsed><li><p class='hand'>Tháng " + i + "/" + j + "<ul><li>" + whatnew[j*12+i] + "</li></ul></li></ul>");
+    if(j>=curyear && i>=curmonth){i=13;}
+    if(i==12){i=0;j++;}
+}
