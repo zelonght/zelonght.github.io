@@ -1,0 +1,10 @@
+vti_encoding:SR|utf8-nl
+vti_timelastmodified:TR|28 Jun 2002 02:41:50 -0000
+vti_extenderversion:SR|4.0.2.3406
+vti_nexttolasttimemodified:TR|28 Jun 2002 02:41:50 -0000
+vti_author:SR|Administrator
+vti_nosourcecontrol:SR|True
+vti_modifiedby:SR|Administrator
+vti_timecreated:TR|28 Jun 2002 02:41:48 -0000
+vti_backlinkinfo:VX|
+vti_syncwith_localhost\\c\:\\documents and settings\\long\\desktop\\ha/c\:/documents and settings/long/desktop/ha:TR|28 Jun 2002 02:41:50 -0000

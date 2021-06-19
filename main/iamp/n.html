@@ -1,0 +1,64 @@
+<Script Language="JavaScript">
+<!--
+if (document.all)
+document.write('<Script Language="JavaScript" Src="amphtml.js"></Script><Script Language="JavaScript" Src="amp.js"></Script>')
+else
+var start="";
+//-->
+</Script>
+<Script>
+<!--
+if (document.all){
+audiodiv.style.posTop=0;    //Display Vertical Position is set here (distance from top in pixels)
+audiodiv.style.posLeft=0;   //Display Horizontal Position is set here (distance from left in pixels)
+autostart=true //This defines wether the player should automatically load first track and play it or wait for user to select a track
+//Add below your song entries
+songurl[0]="http://www.vietvoice.net/lyrics/midi/Nang_chieu.mid"
+songtitle[0]="Nang Chieu"
+songurl[1]="http://www.vietvoice.net/lyrics/midi/Neu_dung_gian_do.mid"
+songtitle[1]="Neu Dung Gian Do"
+songurl[2]="http://www.vietvoice.net/lyrics/midi/Ngam_ngui.mid"
+songtitle[2]="Ngam Ngui"
+songurl[3]="http://www.vietvoice.net/lyrics/midi/Ngan_nam_van_doi.mid"
+songtitle[3]="Ngan Nam Van Doi"
+songurl[4]="http://www.vietvoice.net/lyrics/midi/Ngay_tan_hon.mid"
+songtitle[4]="Ngay Tan Hon"
+songurl[5]="http://www.vietvoice.net/lyrics/midi/Ngo_hon_qua_dem.mid"
+songtitle[5]="Ngo Hon Qua Dem"
+songurl[6]="http://www.vietvoice.net/lyrics/midi/Nguoi_tinh_100nam.mid"
+songtitle[6]="Nguoi Tinh 100 Nam"
+songurl[7]="http://www.vietvoice.net/lyrics/midi/Nguoi_tinh_mua_dong.mid"
+songtitle[7]="Nguoi Tinh Mua Dong"
+songurl[8]="http://www.vietvoice.net/lyrics/midi/Nguoi_tinh_yeu_dau.mid"
+songtitle[8]="Nguoi Tinh Yeu Dau"
+songurl[9]="http://www.vietvoice.net/lyrics/midi/Nhin_nhung_mua_thu_di.mid"
+songtitle[9]="Nhin Nhung Mua Thu Roi"
+songurl[10]="http://www.vietvoice.net/lyrics/midi/Nhu_vat_nang.mid"
+songtitle[10]="Nhu Vat Nang"
+songurl[11]="http://www.vietvoice.net/lyrics/midi/Noi_buon_hoa_phuong.mid"
+songtitle[11]="Noi Buon Hoa Phuong"
+songurl[12]="http://www.vietvoice.net/lyrics/midi/Noi_tiec.mid"
+songtitle[12]="Noi Tiec"
+songurl[13]="http://www.vietvoice.net/lyrics/midi/Nu_hong_cho_em.mid"
+songtitle[13]="Nu Hong Cho Em"
+}
+//-->
+</Script>
+<Script for="jsaudio" event="OpenComplete()" Language="JavaScript">
+<!--
+if (document.all){
+if (start)
+loaded()
+}
+//-->
+</Script>
+<Script for="jsaudio" event="Error(a,b,c,d)" Language="JavaScript">
+<!--
+if (start)
+if (document.all){
+err=b+"";
+if(err.match('Cannot open'))
+f404()
+}
+//-->
+</Script>

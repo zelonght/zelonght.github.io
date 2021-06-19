@@ -1,0 +1,52 @@
+<Script Language="JavaScript">
+<!--
+if (document.all)
+document.write('<Script Language="JavaScript" Src="amphtml.js"></Script><Script Language="JavaScript" Src="amp.js"></Script>')
+else
+var start="";
+//-->
+</Script>
+<Script>
+<!--
+if (document.all){
+audiodiv.style.posTop=0;    //Display Vertical Position is set here (distance from top in pixels)
+audiodiv.style.posLeft=0;   //Display Horizontal Position is set here (distance from left in pixels)
+autostart=true //This defines wether the player should automatically load first track and play it or wait for user to select a track
+//Add below your song entries
+songurl[0]="http://www.vietvoice.net/lyrics/midi/Bai_O_ten.mid"
+songtitle[0]="Bai Khong Ten"
+songurl[1]="http://www.vietvoice.net/lyrics/midi/Bai_khong_ten_so_4.mid"
+songtitle[1]="Bai Khong Ten so 4"
+songurl[2]="http://www.vietvoice.net/lyrics/midi/Bai_tinh_ca_cho_em.mid"
+songtitle[2]="Bai Tinh Ca Cho Em"
+songurl[3]="http://www.vietvoice.net/lyrics/midi/Ben_doi_hiu_quanh.mid"
+songtitle[3]="Ben Doi Hiu Quanh"
+songurl[4]="http://www.vietvoice.net/lyrics/midi/Ben_dong_nuoc.mid"
+songtitle[4]="Ben Dong Nuoc"
+songurl[5]="http://www.vietvoice.net/lyrics/midi/Ben_em_dang_co_ta.mid"
+songtitle[5]="Ben Em Dang Co Ta"
+songurl[6]="http://www.vietvoice.net/lyrics/midi/Ben_em_la_bien_rong.mid"
+songtitle[6]="Ben Em La Bien Rong"
+songurl[7]="http://www.vietvoice.net/lyrics/midi/Bien_nho.mid"
+songtitle[7]="Bien Nho"
+}
+//-->
+</Script>
+<Script for="jsaudio" event="OpenComplete()" Language="JavaScript">
+<!--
+if (document.all){
+if (start)
+loaded()
+}
+//-->
+</Script>
+<Script for="jsaudio" event="Error(a,b,c,d)" Language="JavaScript">
+<!--
+if (start)
+if (document.all){
+err=b+"";
+if(err.match('Cannot open'))
+f404()
+}
+//-->
+</Script>

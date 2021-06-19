@@ -1,0 +1,38 @@
+<Script Language="JavaScript">
+<!--
+if (document.all)
+document.write('<Script Language="JavaScript" Src="amphtml.js"></Script><Script Language="JavaScript" Src="amp.js"></Script>')
+else
+var start="";
+//-->
+</Script>
+<Script>
+<!--
+if (document.all){
+audiodiv.style.posTop=0;    //Display Vertical Position is set here (distance from top in pixels)
+audiodiv.style.posLeft=0;   //Display Horizontal Position is set here (distance from left in pixels)
+autostart=true //This defines wether the player should automatically load first track and play it or wait for user to select a track
+//Add below your song entries
+songurl[0]="http://www.vietvoice.net/lyrics/midi/Quynh_huong.mid"
+songtitle[0]="Quynh Huong"
+}
+//-->
+</Script>
+<Script for="jsaudio" event="OpenComplete()" Language="JavaScript">
+<!--
+if (document.all){
+if (start)
+loaded()
+}
+//-->
+</Script>
+<Script for="jsaudio" event="Error(a,b,c,d)" Language="JavaScript">
+<!--
+if (start)
+if (document.all){
+err=b+"";
+if(err.match('Cannot open'))
+f404()
+}
+//-->
+</Script>

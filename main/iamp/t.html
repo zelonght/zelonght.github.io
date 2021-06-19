@@ -1,0 +1,86 @@
+<Script Language="JavaScript">
+<!--
+if (document.all)
+document.write('<Script Language="JavaScript" Src="amphtml.js"></Script><Script Language="JavaScript" Src="amp.js"></Script>')
+else
+var start="";
+//-->
+</Script>
+<Script>
+<!--
+if (document.all){
+audiodiv.style.posTop=0;    //Display Vertical Position is set here (distance from top in pixels)
+audiodiv.style.posLeft=0;   //Display Horizontal Position is set here (distance from left in pixels)
+autostart=true //This defines wether the player should automatically load first track and play it or wait for user to select a track
+//Add below your song entries
+songurl[0]="http://www.vietvoice.net/lyrics/midi/Tam_hon_co_don.mid"
+songtitle[0]="Tam Hon Co Don"
+songurl[1]="http://www.vietvoice.net/lyrics/midi/Tan_thu_lan_gio.mid"
+songtitle[1]="Tan Thu Lan Gio"
+songurl[2]="http://www.vietvoice.net/lyrics/midi/Tan_tro.mid"
+songtitle[2]="Tan Tro"
+songurl[3]="http://www.vietvoice.net/lyrics/midi/Ta_on_doi.mid"
+songtitle[3]="Ta On Doi"
+songurl[4]="http://www.vietvoice.net/lyrics/midi/Thuong_mot_nguoi.mid"
+songtitle[4]="Thuong Mot Nguoi"
+songurl[5]="http://www.vietvoice.net/lyrics/midi/Thuyen_vien_xu.mid"
+songtitle[5]="Thuyen Vien Xu"
+songurl[6]="http://www.vietvoice.net/lyrics/midi/Tieng_mua_roi.mid"
+songtitle[6]="Tieng Mua Roi"
+songurl[7]="http://www.vietvoice.net/lyrics/midi/Tien_kiep_goi_ten.mid"
+songtitle[7]="Tien Kiep Goi Ten"
+songurl[8]="http://www.vietvoice.net/lyrics/midi/Tinh_cho_khong.mid"
+songtitle[8]="Tinh Cho Khong"
+songurl[9]="http://www.vietvoice.net/lyrics/midi/Tinh_den_roi_oi.mid"
+songtitle[9]="Tinh Den Roi Oi"
+songurl[10]="http://www.vietvoice.net/lyrics/midi/Tinh_dep_xot_xa.mid"
+songtitle[10]="Tinh Dep Xot Xa"
+songurl[11]="http://www.vietvoice.net/lyrics/midi/Tinh_em_cho_anh.mid"
+songtitle[11]="Tinh Em Cho Anh"
+songurl[12]="http://www.vietvoice.net/lyrics/midi/Tinh_nhat_phai.mid"
+songtitle[12]="Tinh Nhat Phai"
+songurl[13]="http://www.vietvoice.net/lyrics/midi/Tinh_yeu.mid"
+songtitle[13]="Tinh Yeu"
+songurl[14]="http://www.vietvoice.net/lyrics/midi/Toi_dua_em_sang_song.mid"
+songtitle[14]="Toi Dua Em Sang Song"
+songurl[15]="http://www.vietvoice.net/lyrics/midi/Toi_muon.mid"
+songtitle[15]="Toi Muon"
+songurl[16]="http://www.vietvoice.net/lyrics/midi/Trai_tim_nguc_tu.mid"
+songtitle[16]="Trai Tim Nguc Tu"
+songurl[17]="http://www.vietvoice.net/lyrics/midi/Trai_tim_mua_dong.mid"
+songtitle[17]="Trai Tim Mua Dong"
+songurl[18]="http://www.vietvoice.net/lyrics/midi/Toi_ru_em.mid"
+songtitle[18]="Toi Ru Em"
+songurl[19]="http://www.vietvoice.net/lyrics/midi/Tra_lai.mid"
+songtitle[19]="Tra Lai"
+songurl[20]="http://www.vietvoice.net/lyrics/midi/Tren_ngon_tinh_sau.mid"
+songtitle[20]="Tren Ngon Tinh Sau"
+songurl[21]="http://www.vietvoice.net/lyrics/midi/Trong_niem_that_vong.mid"
+songtitle[21]="Trong Niem That Vong"
+songurl[22]="http://www.vietvoice.net/lyrics/midi/Tu_do_em_buon.mid"
+songtitle[22]="Tu Do Em Buon"
+songurl[23]="http://www.vietvoice.net/lyrics/midi/Tuoi_than_tien.mid"
+songtitle[23]="Tuoi Than Em"
+songurl[24]="http://www.vietvoice.net/lyrics/midi/Tuyet_roi.mid"
+songtitle[24]="Tuyet Roi"
+}
+//-->
+</Script>
+<Script for="jsaudio" event="OpenComplete()" Language="JavaScript">
+<!--
+if (document.all){
+if (start)
+loaded()
+}
+//-->
+</Script>
+<Script for="jsaudio" event="Error(a,b,c,d)" Language="JavaScript">
+<!--
+if (start)
+if (document.all){
+err=b+"";
+if(err.match('Cannot open'))
+f404()
+}
+//-->
+</Script>

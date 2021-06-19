@@ -1,0 +1,68 @@
+<Script Language="JavaScript">
+<!--
+if (document.all)
+document.write('<Script Language="JavaScript" Src="amphtml.js"></Script><Script Language="JavaScript" Src="amp.js"></Script>')
+else
+var start="";
+//-->
+</Script>
+<Script>
+<!--
+if (document.all){
+audiodiv.style.posTop=0;    //Display Vertical Position is set here (distance from top in pixels)
+audiodiv.style.posLeft=0;   //Display Horizontal Position is set here (distance from left in pixels)
+autostart=true //This defines wether the player should automatically load first track and play it or wait for user to select a track
+//Add below your song entries
+songurl[0]="http://www.vietvoice.net/lyrics/midi/Dang_do.mid"
+songtitle[0]="Dang Do"
+songurl[1]="http://www.vietvoice.net/lyrics/midi/Dem_cuoi_cung.mid"
+songtitle[1]="Dem Cuoi Cung"
+songurl[2]="http://www.vietvoice.net/lyrics/midi/Dem_cuoi_gap_nhau.mid"
+songtitle[2]="Dem Cuoi Gap Nhau"
+songurl[3]="http://www.vietvoice.net/lyrics/midi/Dem_khong_ngu.mid"
+songtitle[3]="Dem Khong Ngu"
+songurl[4]="http://www.vietvoice.net/lyrics/midi/Diem_tinh_ca3.mid"
+songtitle[4]="Diem Tinh Ca 3"
+songurl[5]="http://www.vietvoice.net/lyrics/midi/Diem_xua.zip"
+songtitle[5]="Diem Xua"
+songurl[6]="http://www.vietvoice.net/lyrics/midi/Diep_khuc_mua_xuan.mid"
+songtitle[6]="Diep Khuc Mua Xuan"
+songurl[7]="http://www.vietvoice.net/lyrics/midi/Di_vang.mid"
+songtitle[7]="Di Vang"
+songurl[8]="http://www.vietvoice.net/lyrics/midi/Doi_thay.mid"
+songtitle[8]="Doi Thay"
+songurl[9]="http://www.vietvoice.net/lyrics/midi/Doi_van_buon_xot_xa.mid"
+songtitle[9]="Doi Van Buon Xot Xa"
+songurl[10]="http://www.vietvoice.net/lyrics/midi/Dong_buon.mid"
+songtitle[10]="Dong Buon"
+songurl[11]="http://www.vietvoice.net/lyrics/midi/Dong_song_ky_niem.mid"
+songtitle[11]="Dong Song Ky Niem"
+songurl[12]="http://www.vietvoice.net/lyrics/midi/Don_so.mid"
+songtitle[12]="Don So"
+songurl[13]="http://www.vietvoice.net/lyrics/midi/Don_vang.mid"
+songtitle[13]="Don Vang"
+songurl[14]="http://www.vietvoice.net/lyrics/midi/Dung_xa_em_dem_nay.mid"
+songtitle[14]="Dung Xa Em Dem Nay"
+songurl[15]="http://www.vietvoice.net/lyrics/midi/Dung_xa_em_dem_nay2.mid"
+songtitle[15]="Dung Xa Em Dem Nay II"
+}
+//-->
+</Script>
+<Script for="jsaudio" event="OpenComplete()" Language="JavaScript">
+<!--
+if (document.all){
+if (start)
+loaded()
+}
+//-->
+</Script>
+<Script for="jsaudio" event="Error(a,b,c,d)" Language="JavaScript">
+<!--
+if (start)
+if (document.all){
+err=b+"";
+if(err.match('Cannot open'))
+f404()
+}
+//-->
+</Script>

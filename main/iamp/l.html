@@ -1,0 +1,52 @@
+<Script Language="JavaScript">
+<!--
+if (document.all)
+document.write('<Script Language="JavaScript" Src="amphtml.js"></Script><Script Language="JavaScript" Src="amp.js"></Script>')
+else
+var start="";
+//-->
+</Script>
+<Script>
+<!--
+if (document.all){
+audiodiv.style.posTop=0;    //Display Vertical Position is set here (distance from top in pixels)
+audiodiv.style.posLeft=0;   //Display Horizontal Position is set here (distance from left in pixels)
+autostart=true //This defines wether the player should automatically load first track and play it or wait for user to select a track
+//Add below your song entries
+songurl[0]="http://www.vietvoice.net/lyrics/midi/La_dieu_bong.mid"
+songtitle[0]="La Dieu Bong"
+songurl[1]="http://www.vietvoice.net/lyrics/midi/Lien_khuc_mua.mid"
+songtitle[1]="Lien Khuc Mua"
+songurl[2]="http://www.vietvoice.net/lyrics/midi/Loi_buon.mid"
+songtitle[2]="Loi Buon"
+songurl[3]="http://www.vietvoice.net/lyrics/midi/Loi_hat_cuoi_doi.mid"
+songtitle[3]="Loi Hat Cuoi Doi"
+songurl[4]="http://www.vietvoice.net/lyrics/midi/Long_me.mid"
+songtitle[4]="Long Me"
+songurl[5]="http://www.vietvoice.net/lyrics/midi/Ly_cay_bong.mid"
+songtitle[5]="Ly Cay Bong"
+songurl[6]="http://www.vietvoice.net/lyrics/midi/Ly_ngua_o.mid"
+songtitle[6]="Ly Ngua O"
+songurl[7]="http://www.vietvoice.net/lyrics/midi/Ly_ruoc_mung.mid"
+songtitle[7]="Ly Ruoc Mung"
+}
+//-->
+</Script>
+<Script for="jsaudio" event="OpenComplete()" Language="JavaScript">
+<!--
+if (document.all){
+if (start)
+loaded()
+}
+//-->
+</Script>
+<Script for="jsaudio" event="Error(a,b,c,d)" Language="JavaScript">
+<!--
+if (start)
+if (document.all){
+err=b+"";
+if(err.match('Cannot open'))
+f404()
+}
+//-->
+</Script>

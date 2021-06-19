@@ -1,0 +1,90 @@
+<Script Language="JavaScript">
+<!--
+if (document.all)
+document.write('<Script Language="JavaScript" Src="amphtml.js"></Script><Script Language="JavaScript" Src="amp.js"></Script>')
+else
+var start="";
+//-->
+</Script>
+<Script>
+<!--
+if (document.all){
+audiodiv.style.posTop=0;    //Display Vertical Position is set here (distance from top in pixels)
+audiodiv.style.posLeft=0;   //Display Horizontal Position is set here (distance from left in pixels)
+autostart=true //This defines wether the player should automatically load first track and play it or wait for user to select a track
+//Add below your song entries
+songurl[0]="http://www.vietvoice.net/lyrics/midi/Cafe_dang.mid"
+songtitle[0]="Cafe Dang"
+songurl[1]="http://www.vietvoice.net/lyrics/midi/Cai_trong_com.mid"
+songtitle[1]="Cai trong com"
+songurl[2]="http://www.vietvoice.net/lyrics/midi/Cat_bui_tinh_xua.mid"
+songtitle[2]="Bai But Tinh Xua"
+songurl[3]="http://www.vietvoice.net/lyrics/midi/Cau_chuyen_dau_nam.mid"
+songtitle[3]="Cau Chuyen Dau Nam"
+songurl[4]="http://www.vietvoice.net/lyrics/midi/Chiec_la_mua_dong.mid"
+songtitle[4]="Chiec La Mua Dong"
+songurl[5]="http://www.vietvoice.net/lyrics/midi/Chieu_ky_niem.mid"
+songtitle[5]="Chieu Ky Niem Buon"
+songurl[6]="http://www.vietvoice.net/lyrics/midi/Chieu_mot_minh_qua_pho.mid"
+songtitle[6]="Chieu Mot Minh Qua Pho"
+songurl[7]="http://www.vietvoice.net/lyrics/midi/Chieu_tim.mid"
+songtitle[7]="Chieu Tim"
+songurl[8]="http://www.vietvoice.net/lyrics/midi/Cho_anh_xin_so_nha.mid"
+songtitle[8]="Cho Anh Xin So Nha"
+songurl[9]="http://www.vietvoice.net/lyrics/midi/Cho_vua_long_em.mid"
+songtitle[9]="Cho Vua Long Em"
+songurl[10]="http://www.vietvoice.net/lyrics/midi/Chuyen_hen_ho.mid"
+songtitle[10]="Chuyen Hen Ho"
+songurl[11]="http://www.vietvoice.net/lyrics/midi/Chuyen_tau_hoang_hon.mid"
+songtitle[11]="Chuyen Tau Hoang Hon"
+songurl[12]="http://www.vietvoice.net/lyrics/midi/Co_be_u_sau.mid"
+songtitle[12]="Co Be U Sau"
+songurl[13]="http://www.vietvoice.net/lyrics/midi/Co_don.mid"
+songtitle[13]="Co Don"
+songurl[14]="http://www.vietvoice.net/lyrics/midi/Co_hang_nuoc.mid"
+songtitle[14]="Co Hang Nuoc"
+songurl[15]="http://www.vietvoice.net/lyrics/midi/Co_mot_nguoi.mid"
+songtitle[15]="Co Mot Nguoi"
+songurl[16]="http://www.vietvoice.net/lyrics/midi/Co_mot_tinh_yeu.mid"
+songtitle[16]="Co Mot Tinh Yeu"
+songurl[17]="http://www.vietvoice.net/lyrics/midi/Con_bao.mid"
+songtitle[17]="Con Bao"
+songurl[18]="http://www.vietvoice.net/lyrics/midi/Con_chut_gi_den_nho.mid"
+songtitle[18]="Con Chut Gi De Nho"
+songurl[19]="http://www.vietvoice.net/lyrics/midi/Con_gai.mid"
+songtitle[19]="Con Gai"
+songurl[20]="http://www.vietvoice.net/lyrics/midi/Con_mua_ha.mid"
+songtitle[20]="Con Mua Ha"
+songurl[21]="http://www.vietvoice.net/lyrics/midi/Con_mua_phun.mid"
+songtitle[21]="Con Mua Phun"
+songurl[22]="http://www.vietvoice.net/lyrics/midi/Con_mua_trong_doi.mid"
+songtitle[22]="Con Mua Trong Doi"
+songurl[23]="http://www.vietvoice.net/lyrics/midi/Con_tuoi_nao_cho_em.mid"
+songtitle[23]="Con Tuoi Nao Cho Em"
+songurl[24]="http://www.vietvoice.net/lyrics/midi/Con_yeu.mid"
+songtitle[24]="Con Yeu"
+songurl[25]="http://www.vietvoice.net/lyrics/midi/Con_yeu_em_mai.mid"
+songtitle[25]="Con Yeu Em Mai"
+songurl[26]="http://www.vietvoice.net/lyrics/midi/Co_ua.mid"
+songtitle[26]="Co Ua"
+}
+//-->
+</Script>
+<Script for="jsaudio" event="OpenComplete()" Language="JavaScript">
+<!--
+if (document.all){
+if (start)
+loaded()
+}
+//-->
+</Script>
+<Script for="jsaudio" event="Error(a,b,c,d)" Language="JavaScript">
+<!--
+if (start)
+if (document.all){
+err=b+"";
+if(err.match('Cannot open'))
+f404()
+}
+//-->
+</Script>

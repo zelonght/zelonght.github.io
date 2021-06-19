@@ -1,0 +1,78 @@
+<Script Language="JavaScript">
+<!--
+if (document.all)
+document.write('<Script Language="JavaScript" Src="amphtml.js"></Script><Script Language="JavaScript" Src="amp.js"></Script>')
+else
+var start="";
+//-->
+</Script>
+<Script>
+<!--
+if (document.all){
+audiodiv.style.posTop=0;    //Display Vertical Position is set here (distance from top in pixels)
+audiodiv.style.posLeft=0;   //Display Horizontal Position is set here (distance from left in pixels)
+autostart=true //This defines wether the player should automatically load first track and play it or wait for user to select a track
+//Add below your song entries
+songurl[0]="../music/beaulife.mid"
+songtitle[0]="Beautiful life"
+songurl[1]="../music/citytre.mid"
+songtitle[1]="Thành ph&#7889; tr&#7867;"
+songurl[2]="../music/vnqht.mid"
+songtitle[2]="Vi&#7879;t Nam quê h&#432;&#417;ng tôi"
+songurl[3]="../music/hnmuathu.mid"
+songtitle[3]="Hà N&#7897;i mùa thu"
+songurl[4]="../music/hue.mid"
+songtitle[4]="Hu&#7871; tình th&#432;&#417;ng c&#7911;a tôi"
+songurl[5]="../music/vemtrung.mid"
+songtitle[5]="V&#7873; mi&#7873;n Trung"
+songurl[6]="../music/tomneige.mid"
+songtitle[6]="Tomber La Neige"
+songurl[7]="../music/bang.mid"
+songtitle[7]="Bang Bang"
+songurl[8]="../music/careless.mid"
+songtitle[8]="Careless whisper"
+songurl[9]="../music/happynew.mid"
+songtitle[9]="Happy new year"
+songurl[10]="../music/hello.mid"
+songtitle[10]="Hello"
+songurl[11]="../music/lamobleu.mid"
+songtitle[11]="L'amour est bleu"
+songurl[12]="../music/lovstory.mid"
+songtitle[12]="Love Story"
+songurl[13]="../music/lycbong.mid"
+songtitle[13]="Lý Cây Bông"
+songurl[14]="../music/lycchieu.mid"
+songtitle[14]="Lý Chi&#7873;u Chi&#7873;u"
+songurl[15]="../music/lynguao.mid"
+songtitle[15]="Lý Ng&#7921;a Ô"
+songurl[16]="../music/lyquakeu.mid"
+songtitle[16]="Lý Qu&#7841; Kêu"
+songurl[17]="../music/powelove.mid"
+songtitle[17]="The power of love"
+songurl[18]="../music/rojuliet.mid"
+songtitle[18]="Romeo & Juliet"
+songurl[19]="http://www.vietvoice.net/lyrics/midi/10_nam_tinh_cu.mid"
+songtitle[19]="10 Nam Tinh Cu"
+songurl[20]="http://www.vietvoice.net/lyrics/midi/60_nam_cuoc_doi.mid"
+songtitle[20]="60 Nam Cuoc Doi"
+}
+//-->
+</Script>
+<Script for="jsaudio" event="OpenComplete()" Language="JavaScript">
+<!--
+if (document.all){
+if (start)
+loaded()
+}
+//-->
+</Script>
+<Script for="jsaudio" event="Error(a,b,c,d)" Language="JavaScript">
+<!--
+if (start)
+if (document.all){
+err=b+"";
+if(err.match('Cannot open'))
+f404()
+}
+//-->
+</Script>

@@ -1,0 +1,59 @@
+.mstheme{
+separator-image:url(bluhorsd.gif);
+list-image-1:url(blubul1d.gif);
+list-image-2:url(blubul2d.gif);
+list-image-3:url(blubul3d.gif);
+nav-banner-image:url(blubannd.gif);
+navbutton-horiz-normal:url(bluhbudd.gif);
+navbutton-horiz-pushed:url(bluhbusd.gif);
+navbutton-vert-normal:url(bluvbudd.gif);
+navbutton-vert-pushed:url(bluvbusd.gif);
+navbutton-home-normal:url(bluhombd.gif);
+navbutton-next-normal:url(blunexbd.gif);
+navbutton-prev-normal:url(bluprebd.gif);
+navbutton-up-normal:url(bluupbd.gif);
+}
+UL{
+list-style-image:url(blubul1d.gif);
+}
+UL UL{
+list-style-image:url(blubul2d.gif);
+}
+UL UL UL{
+list-style-image:url(blubul3d.gif);
+}
+.mstheme-bannertxt{
+font-family:"Century Gothic",Arial,Helvetica;
+font-size:5;
+color:#003399;
+}
+.mstheme-horiz-navtxt{
+font-family:"century gothic",arial,helvetica;
+font-size:2;
+color:#003399;
+}
+.mstheme-vert-navtxt{
+font-family:"century gothic",arial,helvetica;
+font-size:2;
+color:#003399;
+}
+.mstheme-navtxthome{
+font-family:"century gothic",arial,helvetica;
+font-size:1;
+color:#003399;
+}
+.mstheme-navtxtup{
+font-family:"century gothic",arial,helvetica;
+font-size:1;
+color:#003399;
+}
+.mstheme-navtxtprev{
+font-family:"century gothic",arial,helvetica;
+font-size:1;
+color:#003399;
+}
+.mstheme-navtxtnext{
+font-family:"century gothic",arial,helvetica;
+font-size:1;
+color:#003399;
+}

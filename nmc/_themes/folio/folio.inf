@@ -1,0 +1,34 @@
+[info]
+codepage=65001
+readonly=true
+version=4.00
+format=2.00
+title=Folio
+refcount=2
+
+[titles]
+1040=Raccoglitore
+1053=Inbunden
+1032=Folio
+1031=Ringbucheinlage
+1036=Feuille perforée
+1044=Folio
+1042=서류
+1028=對摺紙
+2052=对折
+1038=Pergamen
+1049=Скоросшиватель
+1046=Fólio
+1041=ノート
+2070=Agenda
+1054=พับทบ
+1025=حافظة أوراق
+3082=Folio
+1043=Folio
+1030=Notesbog
+1035=Mappi
+1029=Folio
+1045=Folio
+1037=גיליון פוליו
+1055=Föy
+

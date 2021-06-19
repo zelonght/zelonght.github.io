@@ -1,0 +1,70 @@
+<Script Language="JavaScript">
+<!--
+if (document.all)
+document.write('<Script Language="JavaScript" Src="amphtml.js"></Script><Script Language="JavaScript" Src="amp.js"></Script>')
+else
+var start="";
+//-->
+</Script>
+<Script>
+<!--
+if (document.all){
+audiodiv.style.posTop=0;    //Display Vertical Position is set here (distance from top in pixels)
+audiodiv.style.posLeft=0;   //Display Horizontal Position is set here (distance from left in pixels)
+autostart=true //This defines wether the player should automatically load first track and play it or wait for user to select a track
+//Add below your song entries
+songurl[0]="http://www.vietvoice.net/lyrics/midi/Mai_lo_hai_minh_xa_nhau.mid"
+songtitle[0]="Mai Lo Hai Minh Xa Nhau"
+songurl[1]="http://www.vietvoice.net/lyrics/midi/Mat_biet.mid"
+songtitle[1]="Mat Biet"
+songurl[2]="http://www.vietvoice.net/lyrics/midi/Mau_nhuom_ben_thuong_hai.mid"
+songtitle[2]="Mau Nhuom Ben Thuong Hai"
+songurl[3]="http://www.vietvoice.net/lyrics/midi/Mua_thu_la_bay.mid"
+songtitle[3]="Mua Thu La Bay"
+songurl[4]="http://www.vietvoice.net/lyrics/midi/May_lang_thang.mid"
+songtitle[4]="May Lang Thang"
+songurl[5]="http://www.vietvoice.net/lyrics/midi/Moi_tim.mid"
+songtitle[5]="Moi Tim"
+songurl[6]="http://www.vietvoice.net/lyrics/midi/Mong_ban_dau.mid"
+songtitle[6]="Mong Ban Dau"
+songurl[7]="http://www.vietvoice.net/lyrics/midi/Mong_hong.mid"
+songtitle[7]="Mong Hong"
+songurl[8]="http://www.vietvoice.net/lyrics/midi/Mong_vien_du.mid"
+songtitle[8]="Mong Vien Du"
+songurl[9]="http://www.vietvoice.net/lyrics/midi/Mot_minh_quen_biet.mid"
+songtitle[9]="Mot Minh Quen Biet"
+songurl[10]="http://www.vietvoice.net/lyrics/midi/Mot_ngay_con_mai.mid"
+songtitle[10]="Mot Ngay Con Mai"
+songurl[11]="http://www.vietvoice.net/lyrics/midi/Mot_tinh_yeu.mid"
+songtitle[11]="Mot Tinh Yeu"
+songurl[12]="http://www.vietvoice.net/lyrics/midi/Mua.mid"
+songtitle[12]="Mua"
+songurl[13]="http://www.vietvoice.net/lyrics/midi/Mua_ngau.mid"
+songtitle[13]="Mua Ngau"
+songurl[14]="http://www.vietvoice.net/lyrics/midi/Mua_roi.mid"
+songtitle[14]="Mua Roi"
+songurl[15]="http://www.vietvoice.net/lyrics/midi/Mua_thu_khong_tro_lai.mid"
+songtitle[15]="Mua Thu Khong Tro Lai"
+songurl[16]="http://www.vietvoice.net/lyrics/midi/Mua_tren_bien_vang.mid"
+songtitle[16]="Mua Tren Bien Vang"
+}
+//-->
+</Script>
+<Script for="jsaudio" event="OpenComplete()" Language="JavaScript">
+<!--
+if (document.all){
+if (start)
+loaded()
+}
+//-->
+</Script>
+<Script for="jsaudio" event="Error(a,b,c,d)" Language="JavaScript">
+<!--
+if (start)
+if (document.all){
+err=b+"";
+if(err.match('Cannot open'))
+f404()
+}
+//-->
+</Script>

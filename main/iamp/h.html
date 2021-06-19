@@ -1,0 +1,58 @@
+<Script Language="JavaScript">
+<!--
+if (document.all)
+document.write('<Script Language="JavaScript" Src="amphtml.js"></Script><Script Language="JavaScript" Src="amp.js"></Script>')
+else
+var start="";
+//-->
+</Script>
+<Script>
+<!--
+if (document.all){
+audiodiv.style.posTop=0;    //Display Vertical Position is set here (distance from top in pixels)
+audiodiv.style.posLeft=0;   //Display Horizontal Position is set here (distance from left in pixels)
+autostart=true //This defines wether the player should automatically load first track and play it or wait for user to select a track
+//Add below your song entries
+songurl[0]="http://www.vietvoice.net/lyrics/midi/Hai_au_phi_xu.mid"
+songtitle[0]="Hai Au Phi Xu"
+songurl[1]="http://www.vietvoice.net/lyrics/midi/Hai_vi_sao_lac.mid"
+songtitle[1]="Hai Vi Sao Lac"
+songurl[2]="http://www.vietvoice.net/lyrics/midi/Hay_quay_ve_nhau.mid"
+songtitle[2]="Hay Quay Ve Nhau"
+songurl[3]="http://www.vietvoice.net/lyrics/midi/Hoai_cam.mid"
+songtitle[3]="Hoai Cam"
+songurl[4]="http://www.vietvoice.net/lyrics/midi/Hoang_vang.mid"
+songtitle[4]="Hoa Vang"
+songurl[5]="http://www.vietvoice.net/lyrics/midi/Hoa_vang_may_do.mid"
+songtitle[5]="Hoa Vang May Do"
+songurl[6]="http://www.vietvoice.net/lyrics/midi/Hon_vong_phu1.mid"
+songtitle[6]="Hon Vong Phu I"
+songurl[7]="http://www.vietvoice.net/lyrics/midi/Hon_vong_phu2.mid"
+songtitle[7]="Hon Vong Phu II"
+songurl[8]="http://www.vietvoice.net/lyrics/midi/Hon_vong_phu3.mid"
+songtitle[8]="Hon Vong Phu III"
+songurl[9]="http://www.vietvoice.net/lyrics/midi/Hoi_nguoi_tinh.mid"
+songtitle[9]="Hoi Nguoi Tinh"
+songurl[10]="http://www.vietvoice.net/lyrics/midi/Hon_hoang.mid"
+songtitle[10]="Hoang Hon"
+}
+//-->
+</Script>
+<Script for="jsaudio" event="OpenComplete()" Language="JavaScript">
+<!--
+if (document.all){
+if (start)
+loaded()
+}
+//-->
+</Script>
+<Script for="jsaudio" event="Error(a,b,c,d)" Language="JavaScript">
+<!--
+if (start)
+if (document.all){
+err=b+"";
+if(err.match('Cannot open'))
+f404()
+}
+//-->
+</Script>
