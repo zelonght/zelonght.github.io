@@ -1,0 +1,81 @@
+<HTML>
+<head>
+<meta name="Microsoft Theme" content="none, default">
+</head>
+<BODY>
+<Script Language="JavaScript">
+<!--
+if (document.all)
+document.write('<Script Language="JavaScript" Src="amphtml.js"></Script><Script Language="JavaScript" Src="amp.js"></Script>')
+else
+var start="";
+//-->
+</Script>
+<Script>
+<!--
+if (document.all){
+audiodiv.style.posTop=0;    //Display Vertical Position is set here (distance from top in pixels)
+audiodiv.style.posLeft=0;   //Display Horizontal Position is set here (distance from left in pixels)
+autostart=true //This defines wether the player should automatically load first track and play it or wait for user to select a track
+//Add below your song entries
+songurl[0]="../music/beaulife.mid"
+songtitle[0]="Beautiful life"
+songurl[1]="../music/citytre.mid"
+songtitle[1]="Thaønh phoá treû"
+songurl[2]="../music/vnqht.mid"
+songtitle[2]="Vieät Nam queâ höông toâi"
+songurl[3]="../music/hnmuathu.mid"
+songtitle[3]="Haø Noäi muøa thu"
+songurl[4]="../music/hue.mid"
+songtitle[4]="Hueá thöông"
+songurl[5]="../music/vemtrung.mid"
+songtitle[5]="Veà mieàn Trung"
+songurl[6]="../music/tomneige.mid"
+songtitle[6]="Tomber La Neige"
+songurl[7]="../music/bang.mid"
+songtitle[7]="Bang Bang"
+songurl[8]="../music/careless.mid"
+songtitle[8]="Careless whisper"
+songurl[9]="../music/happynew.mid"
+songtitle[9]="Happy new year"
+songurl[10]="../music/hello.mid"
+songtitle[10]="Hello"
+songurl[11]="../music/lamobleu.mid"
+songtitle[11]="L'amour est bleu"
+songurl[12]="../music/lovstory.mid"
+songtitle[12]="Love Story"
+songurl[13]="../music/lycbong.mid"
+songtitle[13]="Lyù Caây Boâng"
+songurl[14]="../music/lycchieu.mid"
+songtitle[14]="Lyù Chieàu Chieàu"
+songurl[15]="../music/lynguao.mid"
+songtitle[15]="Lyù Ngöïa OÂ"
+songurl[16]="../music/lyquakeu.mid"
+songtitle[16]="Lyù Quaï Keâu"
+songurl[17]="../music/powelove.mid"
+songtitle[17]="The power of love"
+songurl[18]="../music/rojuliet.mid"
+songtitle[18]="Romeo & Juliet"
+}
+//-->
+</Script>
+<Script for="jsaudio" event="OpenComplete()" Language="JavaScript">
+<!--
+if (document.all){
+if (start)
+loaded()
+}
+//-->
+</Script>
+<Script for="jsaudio" event="Error(a,b,c,d)" Language="JavaScript">
+<!--
+if (start)
+if (document.all){
+err=b+"";
+if(err.match('Cannot open'))
+f404()
+}
+//-->
+</Script>
+</BODY>
+</HTML>
